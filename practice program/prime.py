@@ -1,4 +1,4 @@
-num = 13195
+num = int(input("enter a number"))
 def prime_factors(num):
   factors = []
   factor = 2
@@ -10,5 +10,5 @@ def prime_factors(num):
     else:
       factors += 1
   return factors
-print("num")
-prime_factors(13195)# [2,2,3]
+print(num)
+#prime_factors(13195)# [2,2,3]

@@ -26,7 +26,7 @@ def fetch_student_details():
     """
     This function fetches the student details
     """
-    email = input("Enter the email id of the student: ")
+    email = input("Enter the email id of the student: ").strip().lower()
     if email in student_dict:
         student = student_dict[email]
         print(f"name = {student.name}")
@@ -47,8 +47,10 @@ def menu():
         elif choice.strip() == "2":
             # fetch student
             fetch_student_details()
-        else:
+        elif choice.strip() == "3":
             break
-    print("Thanks..................")
+        else:
+            print("Please enter 1, 2, or 3.")
+            print("Thanks..................")
 if __name__ == "__main__":
     menu()

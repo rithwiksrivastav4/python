@@ -18,11 +18,11 @@ def start_game():
             guessed = True
             break
         elif guessed_number < random_number:
-            print("you are close think a little bit upwards")
+            print("you are close think a little very bit upwards")
         elif guessed_number > random_number:
             print("you are close think a little bit downwards")
     if not guessed:
-        print("you have lost, Better luck next time")
+        print(f"you have lost, Better luck next time,correct answer is {random_number}")
 if __name__ == '__main__':
     # if this module is executed
     start_game()
